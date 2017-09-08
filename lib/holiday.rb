@@ -79,7 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
             new_string<<"#{supply}"
           end
         end
-      puts "#{holiday.to_s.capitalize!}: #{new_string}"
+      puts "  #{holiday.to_s.capitalize!}: #{new_string}"
     end
   end
 
