@@ -75,7 +75,11 @@ def all_supplies_in_holidays(holiday_hash)
       holiday = holiday.to_s.split("_")
       capital_holiday = String.new
       holiday.each do |element|
-        capital_holiday<<"#{element.capitalize!}"
+        if element = holiday.last
+          capital_holiday<<"#{element.capitalize!}"
+        else
+          capital_holiday<<"#{element.capitalize!} "
+        end
       end
         supplies.each do |supply|
           if supply != supplies.last
