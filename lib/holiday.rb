@@ -72,7 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
     new_string = String.new
     puts "#{season.to_s.capitalize!}:"
     value.each do |holiday, supplies|
-      holiday = holiday.split("_").capitalize!
+      holiday = holiday.to_s.split("_").capitalize!
         supplies.each do |supply|
           if supply != supplies.last
             new_string<<"#{supply}, "
