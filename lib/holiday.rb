@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
     value.each do |holiday, supplies|
       holiday = holiday.to_s.split("_")
       capital_holiday = String.new
-      if holiday.length = 2
+      if holiday.length == 2
         capital_holiday1 = holiday[0].capitalize!
         capital_holiday2 = holiday[1].capitalize!
         capital_holiday = holiday.join(" ")
