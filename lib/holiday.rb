@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
           end
         end
       puts "  #{holiday.to_s.capitalize!}: #{new_string}"
-      new_string=nil
+      new_string=""
     end
   end
 
