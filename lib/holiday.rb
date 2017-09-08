@@ -82,7 +82,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday[0].capitalize!
         holiday[1].capitalize!
         holiday[2].capitalize!
-        capital_holiday = holiday.join(" ")    
+        capital_holiday = holiday.join(" ")
       else
         capital_holiday=holiday[0].capitalize!
       end
